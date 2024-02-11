@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MemeHub</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: #212121;
+                color: #f5f5f5;
+                text-align: center;
+                font-family: Arial, sans-serif;
+            }
+
+            h1 {
+                padding: 20px 0;
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+
+            #meme {
+                height: 70vh; /* Set the height */
+                margin: 20px auto;
+                display: block;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+                    0 6px 6px rgba(0, 0, 0, 0.23);
+                object-fit: fill; /* This will ensure the image covers the full width/height */
+            }
+
+            h3 {
+                font-size: 1.5em;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>A website to serve some memes!</h1>
+        <p>Hit reload to get new a meme...</p>
+        <img id="meme" src="{{meme_pic}}" alt="meme" />
+        <h3>Subreddit: {{subreddit}}</h3>
+    </body>
+</html>
